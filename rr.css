@@ -19,18 +19,17 @@ body{
 .background{
     width: 100%;
     height: 650px;
-    background-image: url(bilder/phone.jpg);
+    background-image: url(BilderSP/phone.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 /*BAKGRUNDSBILD PC------------------------------------------------------------------------------------------------------*/
-
 @media only screen and (min-width: 730px){
 
     .background{
-        background-image: url(bilder/background.jpg);
+        background-image: url(BilderSP/background.jpg);
         height: 700px;
     }
 }
@@ -86,7 +85,7 @@ h1 span{
     clear: left;
 }
 
-.first a{
+.active a{
     margin-top: 10px;
 }
 
@@ -141,8 +140,12 @@ h1 span{
         width: 100%;
     }
 
-    .first{
-        border: 2px solid #fff;
+    .menu a:hover{
+        color: #7FDBFF;
+    }
+
+    .active{
+        border: 2px solid #7FDBFF;
     }
 }
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -169,7 +172,7 @@ h1 span{
 @media only screen and (min-width: 730px){
 
     .caption{
-        background-image: url(bilder/caption.JPG);
+        background-color: #7FDBFF;
         color: #fff;
         margin-top: 400px;
         width: 30%;
@@ -189,11 +192,83 @@ footer{
     border-top: 2px solid #fff;
 }
 
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.all{
+    color: #555;
+    width: 33%;
+}
+
+.all li{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.list1{
+    float: left;
+}
+
+.list2{
+    float: right;
+    text-align: right;
+}
+
+.list3{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-media{
+    width: 70%;
+    margin: 40px auto 30px auto;
+    clear: both;
+    text-align: center;
+    border-top: 2px solid #555;
+    padding-top: 40px;
+}
+
+.social-media li{
+    display: inline;
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+}
+
+.copyright{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
 /*FOOTER PC-------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 730px){
 
     footer{
         border: none;
+    }
+
+    .footer-container{
+        width: 50%;
+    }
+
+    .all li{
+        margin-top: 20px;
+        font-size: 15px; 
+    }
+
+    .social-media{
+        margin: 60px auto 40px auto;
+        padding-top: 50px;
+    }
+
+    .copyright{
+        padding-bottom: 10px;
     }
 }
 /*----------------------------------------------------------------------------------------------------------------------*/

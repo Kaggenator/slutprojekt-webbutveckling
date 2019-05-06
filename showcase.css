@@ -1,0 +1,149 @@
+/*ALLMÄNT---------------------------------------------------------------------------------------------------------------*/
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*MENY MOBIL------------------------------------------------------------------------------------------------------------*/
+header{
+    width: 100%;
+    line-height: 70px;
+}
+
+nav{
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+#toggle{
+    display: none;
+}
+
+.hamburger{
+    margin-left: 5%;
+    margin-right: 10px;
+    float: left;
+    font-size: 20px;
+}
+
+h1 span{
+    font-weight: 100;
+}
+
+.menu{
+    display: none;
+}
+
+.menu a{
+    color: #000;
+    text-align: center;
+    display: block;
+    border-top: 2px solid #000;
+    line-height: 50px;
+}
+
+#toggle:checked ~ .menu{
+    display: block;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*FOOTER MOBIL/IPAD-----------------------------------------------------------------------------------------------------*/
+footer{
+    width: 100%;
+    background-color: #101010;
+    clear: both;
+}
+
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.all{
+    color: #555;
+    width: 33%;
+}
+
+.all li{
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.list1{
+    float: left;
+}
+
+.list2{
+    float: right;
+    text-align: right;
+}
+
+.list3{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.social-media{
+    width: 70%;
+    margin: 40px auto 30px auto;
+    clear: both;
+    text-align: center;
+    border-top: 2px solid #555;
+    padding-top: 40px;
+}
+
+.social-media li{
+    display: inline;
+}
+
+.social-media img{
+    width: 40px;
+    height: 40px;
+    margin: 0 10px 0 10px;
+}
+
+.copyright{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/*FOOTER PC-------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 730px){
+
+    footer{
+        border: none;
+    }
+
+    .footer-container{
+        width: 50%;
+    }
+
+    .all li{
+        margin-top: 20px;
+        font-size: 15px; 
+    }
+
+    .social-media{
+        margin: 60px auto 40px auto;
+        padding-top: 50px;
+    }
+
+    .copyright{
+        padding-bottom: 10px;
+    }
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
