@@ -17,102 +17,67 @@ body{
 
 
 /*-----------------------------------------------------------------------------------------------------------------
-BAKGRUNDSBILD
------------------------------------------------------------------------------------------------------------------*/
-.background{
-    width: 100%;
-    height: 650px;
-    background-image: url(BilderSP/phone.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-@media only screen and (min-width: 730px){
-
-    .background{
-        background-image: url(BilderSP/background.jpg);
-        height: 700px;
-    }
-}
-
-@media only screen and (min-width: 1920px){
-
-    .background{
-        height: 950px;
-    }
-}
-
-
-
-/*-----------------------------------------------------------------------------------------------------------------
 MENY
 -----------------------------------------------------------------------------------------------------------------*/
 header{
     width: 100%;
-    height: 70px;
+    line-height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: hsla(360, 100%, 100%, 1);
 }
 
 nav{
     width: 100%;
-    line-height: 80px;
-    color: #fff;
-}
-
-.hamburger{
-    margin-left: 5%;
-    margin-right: 10px;
-    font-size: 20px;
-    float: left;
-    cursor: pointer;
 }
 
 #toggle{
     display: none;
 }
 
+.hamburger{
+    margin-left: 5%;
+    margin-right: 10px;
+    float: left;
+    font-size: 18px;
+}
+
 h1{
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 h1 span{
     font-weight: 100;
 }
 
+.menu{
+    display: none;
+}
+
 .menu a{
+    color: rgb(0,0,0);
     text-align: center;
     display: block;
-    color: #fff;
-    width: 8%;
-    background-color: #afee;
-    line-height: 35px;
-    font-size: 0;
-    color: none;
-    margin-top: 25px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    float: left;
-    clear: left;
+    border-top: 1px solid rgb(0,0,0);
+    line-height: 50px;
 }
 
-.active a{
-    margin-top: 10px;
+.menu a:hover{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
 }
 
-#toggle:checked ~ .menu a{
-    width: 25%;
-    line-height: 35px;
-    font-size: 17px;
+#toggle:checked ~ .menu{
+    display: block;
 }
 
 @media only screen and (min-width: 730px){
 
     header{
-        height: 100px;
+        line-height: 90px;
+        border-bottom: 2px solid white;
     }
 
     nav{
-        line-height: 100px;
         width: 90%;
         margin: 0 auto;
     }
@@ -123,85 +88,55 @@ h1 span{
 
     h1{
         float: left;
-        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
-        font-size: 22px;
     }
 
     .menu{
+        display: block;
         text-align: right;
     }
 
     .menu li{
         display: inline-block;
         width: 7%;
-        margin-left: 20px;
     }
 
     .menu a{
-        float: none;
-        clear: none;
-        font-size: 15px;
-        background: none;
-        margin: 0;
-        line-height: 50px;
-        width: 100%;
-    }
-
-    .menu a:hover{
-        color: #7FDBFF;
-    }
-
-    .menu li:first-child{
-        border: 2px solid #7FDBFF;
+        border: none;
+        line-height: 40px;
+        color: hsla(360, 100%, 100%, 1);
     }
 }
 
 
 
 /*-----------------------------------------------------------------------------------------------------------------
-SHOWCASE-BUTTON
+MAIN
 -----------------------------------------------------------------------------------------------------------------*/
-.showcase{
-    background-color: #fff;
-    text-align: center;
-    border-radius: 25px;
-    display: block;
-    width: 50%;
-    margin: 400px auto 0 auto;
-    height: 60px;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 25px;
+main{
+    width: 100%;
 }
 
-.showcase a{
-    color: #000; 
+article{
+    width: 90%;
+    margin: 0 auto;
 }
 
-@media only screen and (min-width: 730px){
-
-    .showcase{
-        background-color: #7FDBFF;
-        color: #fff;
-        margin-top: 400px;
-        width: 30%;
-        height: 70px;
-        line-height: 70px;
-    }
-
-    .showcase a{
-        color: #fff; 
-    }
+article section{
+    margin-top: 50px;
 }
 
-@media only screen and (min-width: 1920px){
+h2{
+    font-size: 2rem;
+}
 
-    .showcase{
-        margin-top: 580px;
-    }
+p{
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+
+.black{
+    background-color: rgb(0,0,0);
+    color: #fff;
 }
 
 
@@ -213,7 +148,7 @@ footer{
     width: 100%;
     background-color: #101010;
     clear: both;
-    border-top: 2px solid #fff;
+    margin-top: 50px;
 }
 
 .footer-container{

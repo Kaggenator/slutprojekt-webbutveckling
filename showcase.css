@@ -1,4 +1,6 @@
-/*ALLMÄNT---------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------
+ALLMÄNT
+-----------------------------------------------------------------------------------------------------------------*/
 *{
     list-style: none;
     margin: 0;
@@ -10,20 +12,22 @@ body{
     width: 100%;
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(0,0,0);
 }
-/*----------------------------------------------------------------------------------------------------------------------*/
 
 
 
-/*MENY MOBIL------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------
+MENY
+-----------------------------------------------------------------------------------------------------------------*/
 header{
     width: 100%;
     line-height: 70px;
+    background-color: rgb(255, 255, 255);
 }
 
 nav{
     width: 100%;
-    border-bottom: 2px solid #000;
 }
 
 #toggle{
@@ -34,7 +38,11 @@ nav{
     margin-left: 5%;
     margin-right: 10px;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+h1{
+    font-size: 1.2em;
 }
 
 h1 span{
@@ -46,21 +54,132 @@ h1 span{
 }
 
 .menu a{
-    color: #000;
+    color: rgb(0,0,0);
     text-align: center;
     display: block;
-    border-top: 2px solid #000;
+    border-top: 1px solid rgb(0,0,0);
     line-height: 50px;
+}
+
+.menu a:hover{
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
 }
 
 #toggle:checked ~ .menu{
     display: block;
 }
-/*----------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 730px){
+
+    header{
+        line-height: 90px;
+        background-color: rgb(0, 0, 0);
+        color: hsla(360, 100%, 100%, 1);
+        border-bottom: 1px solid white;
+    }
+
+    nav{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    h1{
+        float: left;
+    }
+
+    .menu{
+        display: block;
+        text-align: right;
+    }
+
+    .menu li{
+        display: inline-block;
+        width: 7%;
+    }
+
+    .menu a{
+        border: none;
+        line-height: 40px;
+        color: hsla(360, 100%, 100%, 1);
+    }
+}
 
 
 
-/*FOOTER MOBIL/IPAD-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------
+MAIN
+-----------------------------------------------------------------------------------------------------------------*/
+main{
+    width: 100%;
+}
+
+.section{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    display: table;
+}
+
+section div{
+    display: table-cell;
+    vertical-align: middle;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.cullinan{
+    background-image: url(BilderSP/culinan.jpg);
+}
+
+.dawn{
+    background-image: url(BilderSP/dawn.jpg);
+}
+
+.phantom{
+    background-image: url(BilderSP/phantom.jpg);
+}
+
+@media only screen and (min-width: 730px){
+
+    .section{
+        width: calc(100%/3);
+    }
+
+    .video{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .section div{
+        font-size: 0;
+    }
+
+    .cullinan{
+        float: left;
+    }
+    
+    .dawn{
+        float: right;
+    }
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------
+FOOTER
+-----------------------------------------------------------------------------------------------------------------*/
 footer{
     width: 100%;
     background-color: #101010;
@@ -70,17 +189,21 @@ footer{
 .footer-container{
     width: 80%;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
-.all{
+footer ul{
     color: #555;
     width: 33%;
 }
 
-.all li{
-    margin-top: 5px;
-    font-size: 18px;
+footer ul li{
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.footer-container ul li:first-child{
+    font-weight: 900;
 }
 
 .list1{
@@ -121,7 +244,6 @@ footer{
     padding-bottom: 5px;
 }
 
-/*FOOTER PC-------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 730px){
 
     footer{
@@ -132,7 +254,7 @@ footer{
         width: 50%;
     }
 
-    .all li{
+    footer ul li{
         margin-top: 20px;
         font-size: 15px; 
     }
@@ -146,4 +268,3 @@ footer{
         padding-bottom: 10px;
     }
 }
-/*----------------------------------------------------------------------------------------------------------------------*/
