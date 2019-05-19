@@ -29,7 +29,6 @@ BAKGRUNDSBILD
 }
 
 @media only screen and (min-width: 730px){
-
     .background{
         background-image: url(BilderSP/background.jpg);
         height: 700px;
@@ -37,7 +36,6 @@ BAKGRUNDSBILD
 }
 
 @media only screen and (min-width: 1920px){
-
     .background{
         height: 950px;
     }
@@ -50,7 +48,6 @@ MENY
 -----------------------------------------------------------------------------------------------------------------*/
 header{
     width: 100%;
-    height: 70px;
 }
 
 nav{
@@ -95,18 +92,16 @@ h1 span{
     clear: left;
 }
 
-.active a{
+.menu li:first-child{
     margin-top: 10px;
 }
 
 #toggle:checked ~ .menu a{
     width: 25%;
-    line-height: 35px;
     font-size: 17px;
 }
 
 @media only screen and (min-width: 730px){
-
     header{
         height: 100px;
     }
@@ -182,7 +177,6 @@ SHOWCASE-BUTTON
 }
 
 @media only screen and (min-width: 730px){
-
     .showcase{
         background-color: #7FDBFF;
         color: #fff;
@@ -198,7 +192,6 @@ SHOWCASE-BUTTON
 }
 
 @media only screen and (min-width: 1920px){
-
     .showcase{
         margin-top: 580px;
     }
@@ -230,6 +223,10 @@ footer ul{
 footer ul li{
     margin-top: 8px;
     font-size: 16px;
+}
+
+footer ul li a{
+    color: #555;
 }
 
 .footer-container ul li:first-child{
@@ -275,7 +272,6 @@ footer ul li{
 }
 
 @media only screen and (min-width: 730px){
-
     footer{
         border: none;
     }
